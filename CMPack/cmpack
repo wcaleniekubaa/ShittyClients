@@ -1,0 +1,134 @@
+tiny	2	0	intermediary	named
+c	A	libs/discordipc/RPCBuilder
+c	uV	net/minecraft/util/I18n
+	m	(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;	w	format
+c	B	libs/discordipc/DiscordUser
+c	C	libs/discordipc/DiscordColors
+c	D	libs/discordipc/DiscordIPC
+c	E	libs/discordipc/PipeStatus
+c	PV	net/minecraft/util/ResourceLocation
+c	H	someException
+c	PY	net/minecraft/util/Session
+	m	()Ljava/lang/String;	UE	toString
+	f	Ljava/lang/String;	username	username
+	m	()Ljava/lang/String;	an	getUsername
+	m	()Lcom/mojang/authlib/GameProfile;	IQ	getProfile
+c	PZ	net/minecraft/util/SessionType
+	m	(Ljava/lang/String;)LPZ;	do	from
+c	mZ	net/minecraft/world/WorldClient
+c	Rk	net/minecraft/server/IntegratedServer
+c	pL	net/minecraft/client/renderer/GlStateManager
+	m	(Ljava/nio/FloatBuffer;)V	q	multMat
+	m	(I)V	bX	matMode
+	m	(I)V	bY	callList
+	m	()V	op	loadIdentity
+	m	()V	oB	pushAttr
+	m	(FFF)V	t	translate
+	m	(FFFF)V	i	rot
+	m	()V	ow	pop
+c	if	net/minecraft/client/Minecraft
+	m	()V	run	run
+	m	()V	gg	setWindowIcom
+	m	(Lko;)V	w	displayGuiScreen
+		p	1	ko2	guiScreen
+	m	()Ljava/util/Map;	fU	getSessionMap
+	m	()V	gI	startGame
+	f	LvY;	vl	gameSettings
+	f	Lif;	vr	theMinecraft
+	m	()Lif;	gd	getMinecraft
+	f	Labd;	client	client
+	m	()J	gq	getSystemTime
+	m	(Ljava/lang/String;Ljava/lang/String;LRk;)V	q	startIntegratedServer
+	m	(LmZ;)V	q	loadWorld
+		p	1	mZ2	world
+	f	Ljf;	vB	galacticFontRenderer
+	f	Lcom/mojang/authlib/minecraft/MinecraftSessionService;	vz	mss
+	f	Ljava/util/List;	vb	macDisplayModes
+	f	Lorg/apache/logging/log4j/Logger;	vG	logger
+	f	Lko;	vP	currentScreen
+	m	()V	fO	runGameLoop
+	f	LmZ;	uG	theWorld
+	f	Ljf;	ux	fontRenderer
+	m	(Lnet/minecraft/client/main/q;)V	<init>	<init>
+		p	1	q2	config
+	m	()V	fI	createDisplay
+	m	()LPY;	ga	getSession
+c	net/minecraft/client/main/Main	net/minecraft/client/main/Main
+	m	([Ljava/lang/String;)V	main	main
+		p	0	stringArray	args
+c	abd	pl/cmpack/CMPack
+	f	Ljava/util/concurrent/ScheduledExecutorService;	chh	scheduledExecutorService
+	m	(Lif;)V	<init>	<init>
+		p	1	if_	mc
+	m	(Ljava/lang/String;Lns;)V	q	getCustomSkin
+		p	1	string	username
+	m	(Ljava/lang/String;)V	fk	browseURLInBrowser
+		p	1	string	url
+	f	Lif;	mc	mc
+	f	Labd;	cgU	instance
+	f	Labh;	cgP	acThread
+	m	()Lorg/apache/logging/log4j/Logger;	ajn	getLogger
+	f	Z	cgQ	isGPUNvidia
+	m	()Ljava/lang/String;	gt	checkForVersion
+	f	Lorg/apache/logging/log4j/Logger;	vG	logger
+c	vY	net/minecraft/client/settings/GameSettings
+c	QT	net/minecraft/world/World
+c	ko	net/minecraft/client/gui/GuiScreen
+	f	Lorg/apache/logging/log4j/Logger;	Ex	logger
+	m	(CI)V	q	keyTyped
+	m	(IIF)V	q	drawScreen
+		p	3	f	partialTicks
+		p	1	n	mouseX
+		p	2	n2	mouseY
+	f	Lif;	mc	mc
+	f	I	et	width
+	f	I	eI	height
+	f	Lcom/google/common/base/Splitter;	Er	splitter
+c	abh	pl/cmpack/ac/AntiCheatThread
+	m	()V	ajt	initializeDetectors
+	f	Labd;	client	client
+	m	(Labd;)V	<init>	<init>
+		p	1	abd2	client
+	f	Ljava/util/List;	detectors	detectors
+	f	Labg;	acShutdownThread	acShutdownThread
+	f	D	damageDistance	damageDistance
+	f	I	reachVL	reachVL
+	f	Labj;	originalValues	originalValues
+c	OV	net/minecraft/util/EnumChatFormatting
+	m	(Ljava/lang/String;)Ljava/lang/String;	dg	stripFromColorCodes
+		p	0	string	str
+	f	Ljava/lang/String;	bwo	string
+	f	Ljava/util/regex/Pattern;	bwm	pattern
+c	abg	pl/cmpack/ac/ACShutdownThread
+c	acK	pl/cmpack/gui/URLOpenGUI
+	f	Z	clG	renderLoadingIndicator
+	f	Lko;	clk	parent
+	m	(Lko;[Ljava/lang/String;)V	<init>	<init>
+		p	1	ko2	parent
+	m	(Lko;ZZ[Ljava/lang/String;)V	<init>	<init>
+		p	1	ko2	parent
+		p	3	bl2	renderLoadingIndicator
+c	abj	pl/cmpack/OriginalValues
+c	acJ	pl/cmpack/gui/CheatWarnGui
+	f	Ljava/lang/String;	clC	message
+	f	Ljava/lang/String;	clF	sdf
+	m	(Ljava/lang/String;Ljava/lang/String;)V	<init>	<init>
+		p	1	string	message
+c	abl	pl/cmpack/NumberType
+c	net/minecraft/client/main/u	net/minecraft/client/main/ClientShutdownThread
+c	abk	pl/cmpack/ac/Detector
+	f	Ljava/lang/reflect/Field;	field	field
+	f	Ljava/lang/String;	cheatType	cheatType
+	f	Lsun/misc/Unsafe;	unsafe	unsafe
+	m	()Labl;	aju	getValueType
+	f	Ljava/lang/String;	maxValue	maxValue
+	f	Ljava/lang/String;	variableName	variableName
+	f	Lif;	mc	mc
+	f	Labl;	valueType	valueType
+c	l	syntheticClass
+	f	[I	G	switchStuff
+c	net/minecraft/client/main/q	net/minecraft/client/main/GameConfiguration
+c	adx	pl/cmpack/CMPack$2
+c	ady	pl/cmpack/CMPack$1
+c	org/newsclub/net/unix/AFUNIXSocket	org/newsclub/net/unix/AFUNIXSocket
+c	jf	net/minecraft/client/gui/FontRenderer
